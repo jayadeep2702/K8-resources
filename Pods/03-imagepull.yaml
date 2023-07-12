@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - image: nginx
-      imagePullpolicy: Always
+      imagePullPolicy: Always
       name: nginx
       ports:
         - containerPort: 80
