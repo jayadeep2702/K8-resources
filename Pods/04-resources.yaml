@@ -7,4 +7,11 @@ spec:
   - image: jayadeep2702/stress
     imagePullPolicy: Always
     name: stress
-    commamd: ["sleep","200"]
+    command: ["sleep","200"]
+  resources:
+    requests:
+      cpu: "150mi"
+      memory: "200Mi"
+    limits:
+      cpu: "200m"
+      memory: "300Mi"
