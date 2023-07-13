@@ -14,15 +14,15 @@ spec:
    min:
     cpu: 100m
    type: Container
- ---
+---
 
-  apiVersion: v1
-  kind: Pod
-  metadata:
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stress
+spec:
+  containers:
+  - image: jayadeep2702/stress
+    imagePullPolicy: Always
     name: stress
-  spec:
-    containers:
-      - image: jayadeep2702/stress
-        imagePullPolicy: Always
-        name: stress
-        command: [ "sleep","200" ]
+    command: [ "sleep","200" ]
