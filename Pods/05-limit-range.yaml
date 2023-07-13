@@ -4,16 +4,16 @@ kind: LimitRange
 metadata:
   name: cpu-resource-constraint
 spec:
-  limits:
-    -default:
-      cpu: "500m"
-     defaultRequest:
-       cpu: "500m"
-     max:
-       cpu: "750m"
-     min:
-       cpu: "100m"
-     type: container
+ limits:
+ - default:
+    cpu: 500m
+   defaultRequest:
+    cpu: 500m
+   max:
+    cpu: "1"
+   min:
+    cpu: 100m
+   type: Container
  ---
 
   apiVersion: v1
