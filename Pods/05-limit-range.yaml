@@ -15,6 +15,7 @@ spec:
        cpu: "100m"
      type: container
  ---
+
   apiVersion: v1
   kind: Pod
   metadata:
