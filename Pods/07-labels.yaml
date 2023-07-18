@@ -6,7 +6,7 @@ metadata:
     course: devops
     duration: 25hrs
     trainer: siva
-specs:
+spec:
   containers:
   - name: nginx
     image: nginx
