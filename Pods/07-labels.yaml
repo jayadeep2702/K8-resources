@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: label-Pod
+  name: label-pod
   labels:
     course: devops
     duration: 25hrs
