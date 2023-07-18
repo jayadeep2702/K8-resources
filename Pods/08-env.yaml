@@ -8,6 +8,12 @@ spec:
       image: nginx
       env:
       - name: course
-        value: docker
+        valueFrom:
+          configMapKeyRef:
+            name: course-data
+            key: course
       - name: trainer
-        value: siva
+        valueFrom:
+          configmapKeyRef:
+            name: course-data
+            key: duration
