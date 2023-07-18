@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    course: devops
+    duration: 25hrs
+    trainer: siva
+specs:
+  containers:
+  - name: nginx
+    image: nginx
