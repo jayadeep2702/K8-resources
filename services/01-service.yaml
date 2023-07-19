@@ -29,7 +29,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: debug
-  purpoese: dubug
+  purpose: dubug
 spec:
   containers:
   - name: almalinux
