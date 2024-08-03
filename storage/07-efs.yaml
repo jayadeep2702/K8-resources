@@ -33,9 +33,9 @@ spec:
     - name: nginx
       image: nginx
       volumeMounts:
-        - name: my-efs-volume
-          mountPath: /usr/share/nginx/html
+      - name: my-efs-volume
+        mountPath: /usr/share/nginx/html
   volumes:
-    - name: my-efs-volume
-      persistentVolumeClaim:
-        claimName: efs-claim
+  - name: my-efs-volume
+    persistentVolumeClaim:
+    claimName: efs-claim
