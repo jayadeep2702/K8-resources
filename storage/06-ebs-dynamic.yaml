@@ -30,8 +30,8 @@ spec:
     - name: nginx
       image: nginx
       volumeMounts:
-        - name: my-ebs-volume
-          mountPath: /usr/share/nginx/html
+      - name: my-ebs-volume
+        mountPath: /usr/share/nginx/html
   volumes:
     - name: my-ebs-volume
       persistentVolumeClaim:
