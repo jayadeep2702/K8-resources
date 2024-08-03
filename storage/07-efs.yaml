@@ -38,4 +38,4 @@ spec:
   volumes:
   - name: my-efs-volume
     persistentVolumeClaim:
-    claimName: efs-claim
+      claimName: efs-claim
